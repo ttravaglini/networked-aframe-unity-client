@@ -1,0 +1,25 @@
+{
+  "name": "com.spacedogxr.networked-aframe-unity-client",
+  "version": "0.0.1",
+  "displayName": "networked-aframe Unity Client",
+  "description": "A client library that allows Unity projects to interact with [networked-aframe](https://github.com/networked-aframe/networked-aframe) servers",
+  "dependencies": {
+    "com.itisnajim.socketiounity": "1.1.4",
+    "com.unity.nuget.newtonsoft-json" : "3.0.2"
+ },
+ "keywords": [
+    "Unity",
+    "Unity3d",
+    "Multiplayer",
+    "Realtime",
+    "aframe",
+    "networked-aframe",
+    "webxr"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "ttravaglini",
+    "email": "contact@spacedogxr.com",
+    "url": "https://spacedogxr.github.io/"
+  }
+}

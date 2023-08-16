@@ -12,7 +12,7 @@ namespace Assets
     public class NetworkedEntity : MonoBehaviour
     {
         //Only used for local instances that are synced over the network
-        public SocketManager SocketManager = null;
+        public NAFScene NafScene = null;
 
         public string TemplateId { get; set; }
 
@@ -255,7 +255,7 @@ namespace Assets
 
             var syncData = this.CreateSyncData(components);
 
-            this.SocketManager.wsEasyRTCAdapter.BroadcastDataGuaranteed("u", syncData);
+            this.NafScene.nafAdapter.BroadcastDataGuaranteed("u", syncData);
         }
 
         /// <summary>
@@ -339,7 +339,7 @@ namespace Assets
         /// </summary>
         private void UpdateNetworkComponents()
         {
-            if (!this.IsLocal || this.SocketManager == null || string.IsNullOrEmpty(this.Owner))
+            if (!this.IsLocal || this.NafScene == null || string.IsNullOrEmpty(this.Owner))
             {
                 return;
             }
@@ -366,7 +366,7 @@ namespace Assets
                 { "d", new EntityData[] { syncData } }
             };
 
-            this.SocketManager.wsEasyRTCAdapter.BroadcastData("um", dataToSend);
+            this.NafScene.nafAdapter.BroadcastData("um", dataToSend);
 
             this.UpdateNextSyncTime();
         }
@@ -394,16 +394,16 @@ namespace Assets
         /// </summary>
         private void UpdateNextSyncTime()
         {
-            this._nextSyncTime = Time.time + 1f / (float)SocketManager.NetworkUpdatesPerSecond;
+            this._nextSyncTime = Time.time + 1f / (float)NafScene.NetworkUpdatesPerSecond;
         }
 
         private void Start()
         {
-            if (this.IsLocal && this.SocketManager != null)
+            if (this.IsLocal && this.NafScene != null)
             {
                 _positionCache = this.gameObject.transform.position;
                 _rotationCache = this.gameObject.transform.rotation;
-                this.SocketManager.onConnected.AddListener(this.OnConnected);
+                this.NafScene.onConnected.AddListener(this.OnConnected);
             }
 
             if (string.IsNullOrEmpty(NetworkId))

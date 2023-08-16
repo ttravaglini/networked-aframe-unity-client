@@ -6,15 +6,14 @@ namespace Assets
 {
     public class OnEntityUpdate: UnityEvent<EntityData, double> {}
     public class OnDataChannelClosed: UnityEvent<string> {}
-
     public class OnConnected : UnityEvent<string> { }
 
     //see NoOpAdapter.js
     public abstract class NafInterface : MonoBehaviour
     {
-        public OnConnected OnConnected { get; set; }
-        public OnEntityUpdate OnEntityUpdate { get; set; }
-        public OnDataChannelClosed OnDataChannelClosed { get; set; }
+        public OnConnected OnConnected = new OnConnected();
+        public OnEntityUpdate OnEntityUpdate = new OnEntityUpdate();
+        public OnDataChannelClosed OnDataChannelClosed = new OnDataChannelClosed();
         
         public abstract void Connect();
         

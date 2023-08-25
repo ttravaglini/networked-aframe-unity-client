@@ -8,8 +8,15 @@
   "licensesUrl": "https://github.com/ttravaglini/networked-aframe-unity-client/blob/main/LICENSE",
   "dependencies": {
     "com.unity.nuget.newtonsoft-json" : "3.0.2"
- },
- "keywords": [
+  },
+  "samples": [
+    {
+      "displayName": "Networked-aframe example scenes",
+      "description": "A collection of scenes matching the examples published for networked-aframe",
+      "path": "Samples~/NafSamples"
+    }
+  ],
+  "keywords": [
     "Unity",
     "Unity3d",
     "Multiplayer",

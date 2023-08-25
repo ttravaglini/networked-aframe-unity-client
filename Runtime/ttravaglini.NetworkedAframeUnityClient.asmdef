@@ -1,9 +1,7 @@
 {
     "name": "ttravaglini.NetworkedAframeUnityClient",
     "rootNamespace": "",
-    "references": [
-        "GUID:ac740251aebda49e8bf622aa1652e9e3"
-    ],
+    "references": [],
     "includePlatforms": [],
     "excludePlatforms": [],
     "allowUnsafeCode": false,

@@ -1,6 +1,9 @@
 # networked-aframe-unity-client
 
 ## Description
+
+**Build cross-platform, multi-user VR experiences across the Web, VR headsets, mobile apps, and more.**
+
 A client library that allows Unity projects to interact with [networked-aframe](https://github.com/networked-aframe/networked-aframe) servers.
 
 ## Getting Started
@@ -35,9 +38,11 @@ At this point, you have the Basic Events example from NAF running in your browse
 
 ![screenshot showing Basic Events example](Documentation~/images/BasicEventsExample.PNG)
 
+## Documentation
+Go to the [Components Documentation](Documentation~/ComponentsDocumentation.md) for more information on how each NAF-unity-client component works and how to integrate it into your own Unity project.
 
 ## Limitations
-- Only works for WSEasyRTC adapter
+- Currently this library only works in conjunction with the default WsEasyRtcAdapter within networked-aframe, and it has only been tested locally.
 - Only a subset of the functionality from NAF has been ported over. Certain functionality, such as object persistence and ownership transfer, are not yet functional.
 - If you're interested in helping out with fixing these issues and more, please consider contributing!
 
@@ -47,5 +52,6 @@ Networked-aframe-unity-client is available under the MIT license.
 
 ## Acknowledgement
 
-- SocketIO Unity
-- NAF
+- [SocketIOUnity](https://github.com/itisnajim/SocketIOUnity)
+- [networked-aframe](https://github.com/networked-aframe/networked-aframe)
+- [A-Frame](https://aframe.io/)

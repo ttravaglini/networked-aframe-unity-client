@@ -4,7 +4,7 @@ namespace Assets
 {
     public abstract class CustomComponentParser : MonoBehaviour
     {
-        public int ComponentIndex;
+        public int ComponentIndex = 2;
 
         /// <summary>
         /// Parses the custom networkedEntity component value

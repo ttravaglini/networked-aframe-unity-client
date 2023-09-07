@@ -3,18 +3,31 @@
   "version": "0.0.1",
   "displayName": "networked-aframe Unity Client",
   "description": "A client library that allows Unity projects to interact with [networked-aframe](https://github.com/networked-aframe/networked-aframe) servers",
+  "documentationUrl": "https://github.com/ttravaglini/networked-aframe-unity-client",
+  "changelogUrl": "https://github.com/ttravaglini/networked-aframe-unity-client/releases",
+  "licensesUrl": "https://github.com/ttravaglini/networked-aframe-unity-client/blob/main/LICENSE",
   "dependencies": {
-    "com.itisnajim.socketiounity": "1.1.4",
     "com.unity.nuget.newtonsoft-json" : "3.0.2"
- },
- "keywords": [
+  },
+  "samples": [
+    {
+      "displayName": "Networked-aframe example scenes",
+      "description": "A collection of scenes matching the examples published for networked-aframe",
+      "path": "Samples~/NafSamples"
+    }
+  ],
+  "keywords": [
     "Unity",
     "Unity3d",
     "Multiplayer",
     "Realtime",
     "aframe",
     "networked-aframe",
-    "webxr"
+    "webxr",
+    "augmented-reality",
+    "virtual-reality",
+    "AR",
+    "VR"
   ],
   "license": "MIT",
   "author": {

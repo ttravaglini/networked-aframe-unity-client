@@ -18,7 +18,7 @@ First, create a new Unity project. In your Unity project, set the correct Player
 
 Next, download the NAF-unity-client library:
 
-- Copy the URL `https://github.com/ttravaglini/networked-aframe-unity-client`
+- Copy the URL `https://github.com/ttravaglini/networked-aframe-unity-client.git`
     - In Unity, go to Window --> Package Manager --> click (+) --> Add Package from Git URL
     - Paste in the URL for this package
 

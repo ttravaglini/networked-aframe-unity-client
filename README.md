@@ -45,7 +45,7 @@ At this point, you have the Basic Events example from NAF running in your browse
 _In this screenshot, we have two browser clients and one Unity client running the Basic Events scene with networked-aframe. The Unity client is represented by the red avatar, and the browser clients are represented by the blue and light green avatars._
 
 
-https://github.com/ttravaglini/networked-aframe-unity-client/assets/10555826/c2ebbd48-815a-47bc-9cb1-649e1b88d950
+https://github.com/ttravaglini/networked-aframe-unity-client/assets/10555826/653f4c76-a280-4992-8ce3-bc7e4b05ad4e
 
 _This video shows the same scenario as above; it shows two browser clients and one Unity client running the Basic Events scene with networked-aframe._
 
